@@ -138,7 +138,7 @@
                 @foreach ($kecamatan2 as $row)
             
             
-            L.marker([<?=$row->lat?>, <?=$row->lng?>]).addTo(mymap).bindPopup("Kecamatan : <?=$row->nama_kec?><br>Data Belum Vaksin : <?=$row->bvaksin?><br>Zona Area : <?=$row->zona?>");
+            L.marker([<?=$row->lat?>, <?=$row->lng?>]).addTo(mymap).bindPopup("Kecamatan : <?=$row->nama?><br>Data Belum Vaksin : <?=$row->bvaksin?><br>Zona Area : <?=$row->zona?>");
             @endforeach;
    </script>
 

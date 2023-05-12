@@ -13,12 +13,12 @@
                 </tr>
 
                 <tr>
-                    <td style="width:150px">Kecamatan</td>
-                        <td>{{ $data['tanggal'] }}</td>
                     </tr><tr>
 
                         <td style="width:150px">Kabupaten</td>
-                            <td>{{ $data["id_kec"] }}</td>
+                        @foreach($kab as $item)
+                            <td>{{ $item->nama }}</td>
+                            @endforeach
                         </tr>
 
                         <tr>
@@ -28,42 +28,42 @@
 
                             <tr>
                                 <td style="width:150px">Lansia</td>
-                                    <td>{{ $data->lansia }}</td>
+                                    <td>{{ $data['lansia'] }}</td>
                                 </tr>
 
                                 <tr>
                                     <td style="width:150px">Vaksin Lansia</td>
-                                        <td>{{ $data->vaksin_lansia }}</td>
+                                        <td>{{ $data['vaksin_lansia'] }}</td>
                                     </tr>
 
                                     <tr>
                                         <td style="width:150px">ODGJ</td>
-                                            <td>{{ $data->odgj }}</td>
+                                            <td>{{ $data['odgj']}}</td>
                                         </tr>
 
                                         <tr>
                                             <td style="width:150px">Vaksin ODGJ</td>
-                                                <td>{{ $data->vaksin_odgj }}</td>
+                                                <td>{{ $data['vaksin_odgj'] }}</td>
                                             </tr>
 
                                             <tr>
                                                 <td style="width:150px">Disabilitas</td>
-                                                    <td>{{ $data->disabilitas }}</td>
+                                                    <td>{{ $data['disabilitas'] }}</td>
                                                 </tr>
 
                                                 <tr>
                                                     <td style="width:150px">Vaksin Disabilitas</td>
-                                                        <td>{{ $data->vaksin_disabilitas }}</td>
+                                                        <td>{{ $data['vaksin_disabilitas'] }}</td>
                                                     </tr>
 
                                                     <tr>
                                                         <td style="width:150px">Sudah Divaksin</td>
-                                                            <td>{{ $data->svaksin }}%</td>
+                                                            <td>{{ $data['svaksin']}}%</td>
                                                         </tr>
 
                                                         <tr>
                                                             <td style="width:150px">Belum Divaksin</td>
-                                                                <td>{{ $data->bvaksin }}%</td>
+                                                                <td>{{ $data['bvaksin']}}%</td>
                                                             </tr>
             </table></center><br><br>
             <center><a href="target"><button>Data Baru</button></a>

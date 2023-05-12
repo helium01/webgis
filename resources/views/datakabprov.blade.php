@@ -7,9 +7,7 @@
 		<tr>
 			<th>No.</th>
 			<th width="100px">Nama Kabupaten</th>
-			<th width="200px">Nama Kecamatan</th>
-            <th width="200px">Latitude</th>
-            <th width="200px">Longtitude</th>
+            <th width="200px">warna pada peta</th>
 		</tr>
 		@php
 			$no = 1;	
@@ -18,9 +16,7 @@
 		<tr>
 			<td>{{ $no++ }}</td>
 			<td>{{ $row->nama }}</td>
-			<td>{{ $row->nama_kec }}</td>
-            <td>{{ $row->lat }}</td>
-            <td>{{ $row->lng }}</td>
+			<td><div style="background-color: {{ $row->warna_kabupaten }}; width: 50px; height: 50px;"></div></td>
 		</tr>
 		
 		@endforeach

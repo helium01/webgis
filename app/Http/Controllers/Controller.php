@@ -24,7 +24,6 @@ class Controller extends BaseController
         $user = Auth::user();
         $data = [
             'kecamatan' => DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
             ->get(),
 
@@ -37,7 +36,6 @@ class Controller extends BaseController
         $data = [
 
             'kecamatan1' => DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
             ->where('zona','hijau')
             ->get(),
@@ -51,7 +49,6 @@ class Controller extends BaseController
         $data = [
 
             'kecamatan2' => DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
             ->where('zona','kuning')
             ->get(),
@@ -65,7 +62,6 @@ class Controller extends BaseController
         $data = [
 
             'kecamatan3' => DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
             ->where('zona','orange')
             ->get(),
@@ -79,7 +75,6 @@ class Controller extends BaseController
         $data = [
 
             'kecamatan4' => DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
             ->where('zona','merah')
             ->get(),

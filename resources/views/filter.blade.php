@@ -31,7 +31,6 @@
                 <tr>
                     <th>Tanggal</th>
                     <th>Kabupaten</th>
-                    <th>Kecamatan</th>
                     <th>Lansia</th>
                     <th>ODGJ</th>
                     <th>Disabilitas</th>
@@ -80,7 +79,6 @@
                     <tr>
                         <th><?php echo $s->tanggal; ?></th>
                         <th><?php echo $s->nama; ?></th>
-                        <th><?php echo $s->nama_kec; ?></th>
                         <th><?php echo $s->tlansia; ?>%</th>
                         <th><?php echo $s->todgj; ?>%</th>
                         <th><?php echo $s->tdisabilitas; ?>%</th>

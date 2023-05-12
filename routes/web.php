@@ -45,6 +45,8 @@ Route::post('register', 'UserLoginController@register');
 
         Route::get('target','DtargetController@index');
 
+        Route::get('/hapus/data/{id}','DtargetController@hapus');
+
         Route::get('carikec','DtargetController@carikec')->name('carikec');
 
         Route::get('simpan-vaksin','DtargetController@simpan')->name('simpan-vaksin');

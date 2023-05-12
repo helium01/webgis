@@ -53,21 +53,7 @@
         var d = parseInt($("#lansia").val());
         var e = parseInt($("#disabilitas").val());
         var f = parseInt($("#odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g / h * 100;
@@ -82,21 +68,7 @@
         var d = parseInt($("#lansia").val());
         var e = parseInt($("#disabilitas").val());
         var f = parseInt($("#odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+        
         var g = a + b + c;
         var h = d + e + f;
         var i = g / h * 100;
@@ -110,21 +82,7 @@
         var d = parseInt($("#lansia").val());
         var e = parseInt($("#disabilitas").val());
         var f = parseInt($("#odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g / h * 100;
@@ -138,21 +96,7 @@
         var d = parseInt($("#lansia").val());
         var e = parseInt($("#disabilitas").val());
         var f = parseInt($("#odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g / h * 100;
@@ -167,21 +111,7 @@
         var d = parseInt($("#lansia").val());
         var e = parseInt($("#disabilitas").val());
         var f = parseInt($("#odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+        
         var g = a + b + c;
         var h = d + e + f;
         var i = g / h * 100;
@@ -196,21 +126,7 @@
         var d = parseInt($("#lansia").val());
         var e = parseInt($("#disabilitas").val());
         var f = parseInt($("#odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+        
         var g = a + b + c;
         var h = d + e + f;
         var i = g / h * 100;
@@ -228,21 +144,7 @@
         var d = parseInt($("#vaksin_lansia").val());
         var e = parseInt($("#vaksin_disabilitas").val());
         var f = parseInt($("#vaksin_odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g - h;
@@ -257,21 +159,7 @@
         var d = parseInt($("#vaksin_lansia").val());
         var e = parseInt($("#vaksin_disabilitas").val());
         var f = parseInt($("#vaksin_odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g - h;
@@ -287,21 +175,7 @@
         var d = parseInt($("#vaksin_lansia").val());
         var e = parseInt($("#vaksin_disabilitas").val());
         var f = parseInt($("#vaksin_odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+      
         var g = a + b + c;
         var h = d + e + f;
         var i = g - h;
@@ -316,21 +190,7 @@
         var d = parseInt($("#vaksin_lansia").val());
         var e = parseInt($("#vaksin_disabilitas").val());
         var f = parseInt($("#vaksin_odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g - h;
@@ -345,21 +205,7 @@
         var d = parseInt($("#vaksin_lansia").val());
         var e = parseInt($("#vaksin_disabilitas").val());
         var f = parseInt($("#vaksin_odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g - h;
@@ -374,21 +220,7 @@
         var d = parseInt($("#vaksin_lansia").val());
         var e = parseInt($("#vaksin_disabilitas").val());
         var f = parseInt($("#vaksin_odgj").val());
-        if (d < a) {
-            a = d;
-        } else {
-            a = a
-        }
-        if (e < b) {
-            b = e;
-        } else {
-            b = b
-        }
-        if (d < c) {
-            c = f;
-        } else {
-            c = c
-        }
+       
         var g = a + b + c;
         var h = d + e + f;
         var i = g - h;
@@ -399,11 +231,7 @@
     $("#lansia").keyup(function() {
         var a = parseInt($("#lansia").val());
         var b = parseInt($("#vaksin_lansia").val());
-        if (a < b) {
-            b = a;
-        } else {
-            a = a
-        }
+        
         var c = a - b;
         var d = c / a * 100;
         $("#tlansia").val(d);
@@ -412,11 +240,7 @@
     $("#vaksin_lansia").keyup(function() {
         var a = parseInt($("#lansia").val());
         var b = parseInt($("#vaksin_lansia").val());
-        if (a < b) {
-            b = a;
-        } else {
-            a = a
-        }
+        
         var c = a - b;
         var d = c / a * 100;
         $("#tlansia").val(d);
@@ -425,11 +249,7 @@
     $("#disabilitas").keyup(function() {
         var a = parseInt($("#disabilitas").val());
         var b = parseInt($("#vaksin_disabilitas").val());
-        if (a < b) {
-           b = a;
-        } else {
-            a = a
-        }
+       
         var c = a - b;
         var d = c / a * 100;
         $("#tdisabilitas").val(d);
@@ -438,11 +258,7 @@
     $("#vaksin_disabilitas").keyup(function() {
         var a = parseInt($("#disabilitas").val());
         var b = parseInt($("#vaksin_disabilitas").val());
-        if (a < b) {
-            b = a;
-        } else {
-            a = a
-        }
+       
         var c = a - b;
         var d = c / a * 100;
         $("#tdisabilitas").val(d);
@@ -451,11 +267,7 @@
     $("#odgj").keyup(function() {
         var a = parseInt($("#odgj").val());
         var b = parseInt($("#vaksin_odgj").val());
-        if (a < b) {
-            b = a;
-        } else {
-            a = a
-        }
+       
         var c = a - b;
         var d = c / a * 100;
         $("#todgj").val(d);
@@ -464,21 +276,33 @@
     $("#vaksin_odgj").keyup(function() {
         var a = parseInt($("#odgj").val());
         var b = parseInt($("#vaksin_odgj").val());
-        if (a < b) {
-            b = a;
-        } else {
-            a = a
-        }
+       
         var c = a - b;
         var d = c / a * 100;
         $("#todgj").val(d);
     });
 </script>
+<script>
+    var value = document.getElementById("input-value").value;
+    console.log(value);
+</script>
 
 <script>
-    function goBack() {
-        window.history.back();
-    }
+    $('#vaksin_disabilitas').keyup(function() {
+    var val1 = $('#bvaksin').val();
+    console.log(val1);
+    var val2 = $('#zona').val();
+    if (val1 >= 0 && val1<=20) {
+      $('#zona').val('hijau');
+    } else if (val1 >=21 && val1 <= 50) {
+      $('#zona').val('kuning');
+    }  else if (val1 >=51 && val1 <= 85) {
+      $('#zona').val('orange');
+    }  else if (val1 >=86 && val1 <= 100) {
+      $('#zona').val('merah');
+    } 
+    console.log(val1);
+  });
 </script>
 
 

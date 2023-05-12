@@ -34,52 +34,36 @@ class DtargetController extends Controller
     }
 
     public function simpan(Request $request){
-        if($request->lansia<$request->vaksin_lansia){
-            $vaksin_lansia=$request->lansia;
-        }else{
-            $vaksin_lansia=$request->vaksin_lansia;
-        }
-        if($request->odgj<$request->vaksin_odgj){
-            $vaksin_odgj=$request->odgj;
-        }else{
-            $vaksin_odgj=$request->vaksin_odgj;
-        }
-        if($request->disabilitas<$request->vaksin_disabilitas){
-            $vaksin_disabilitas=$request->disabilitas;
-        }else{
-            $vaksin_disabilitas=$request->vaksin_disabilitas;
-        }
-        $svaksin=($vaksin_disabilitas+$vaksin_odgj+$vaksin_lansia)/($request->disabilitas+$request->odgj+$request->lansia)*100;
-        $bvaksin= ($request->disabilitas + $request->odgj + $request->lansia)-($vaksin_disabilitas + $vaksin_odgj + $vaksin_lansia) / ($request->disabilitas + $request->odgj + $request->lansia)*100;
-        if($bvaksin<=0){
-            $bvaksin=0;
-        }
-       $jquin = [
+        $jquin = [
 
-        'id_kec'=> $request->input('nama_kec'),
-        'id_kab'=> $request->input('nama'),
-        'zona'=> $request->input('zona'),
-        'lansia'=> $request->input('lansia'),
-        'vaksin_lansia'=> $vaksin_lansia,
-        'odgj'=> $request->input('odgj'),
-        'vaksin_odgj'=> $vaksin_odgj,
-        'disabilitas'=> $request->input('disabilitas'),
-        'vaksin_disabilitas'=> $vaksin_disabilitas,
-        'tanggal'=> $request->input('tanggal'),
-        'tlansia'=> $request->input('tlansia'),
-        'tdisabilitas'=> $request->input('tdisabilitas'),
-        'todgj'=> $request->input('todgj'),
-        'svaksin'=> $svaksin,
-        'bvaksin'=> $bvaksin
-
-       ];
-
-       DB::table('data_target')
-       ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
-       ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
-       ->insert($jquin);
-       dd($jquin);
-       return view('datatarget',['data' => $jquin]);
+            'id_kab'=> $request->input('nama'),
+            'zona'=> $request->input('zona'),
+            'lansia'=> $request->input('lansia'),
+            'vaksin_lansia'=> $request->input('vaksin_lansia'),
+            'odgj'=> $request->input('odgj'),
+            'vaksin_odgj'=> $request->input('vaksin_odgj'),
+            'disabilitas'=> $request->input('disabilitas'),
+            'vaksin_disabilitas'=> $request->input('vaksin_disabilitas'),
+            'tanggal'=> $request->input('tanggal'),
+            'tlansia'=> $request->input('tlansia'),
+            'tdisabilitas'=> $request->input('tdisabilitas'),
+            'todgj'=> $request->input('todgj'),
+            'svaksin'=> $request->input('svaksin'),
+            'bvaksin'=> $request->input('bvaksin')
+    
+           ];
+           $kab=DB::table('kabupaten')->where('id_kab',$request->nama)->get();
+    
+           DB::table('data_target')
+           ->leftJoin('kabupaten', 'kabupaten.id_kab','=','data_target.id_kab')
+           ->leftJoin('kecamatan', 'kecamatan.id_kec','=','data_target.id_kec')
+           ->insert($jquin);
+    
+           return view('datatarget',['data' => $request],compact('kab'));
+    }
+    public function hapus($id){
+        DB::table('data_target')->where('id_target',$id)->delete();
+        return redirect('/datatarget');
     }
 
 }

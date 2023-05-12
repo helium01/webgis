@@ -24,21 +24,10 @@
                         @endforeach
                     </select>
                 </p>
-                <p>
-                    <label>Kecamatan : </label>
-                    <select name="nama_kec" style="width: 200px" class="nama_kec" id="nama_kec" value="{{ old('id_kec') }}" required />
-                        <option value="0" disabled="true" selected="true">-Select-</option>
-                    </select>
-                </p>
 
                 <p>
                     <label>Tipe Zona : </label>
-                    <select name="zona" style="width: 200px" class="zona" id="zona" value="{{ old('zona') }}"required />
-                        <option value="hijau">Hijau</option>
-                        <option value="kuning">Kuning</option>
-                        <option value="orange">Orange</option>
-                        <option value="merah">Merah</option>
-                     </select>
+                     <input type="hidden" name="zona" id="zona" value="{{ old('lansia') }}" readonly />
 
                 </p>
 

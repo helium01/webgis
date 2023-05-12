@@ -18,12 +18,10 @@ class FilterController extends Controller
     {
 
         $filter = DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec', '=', 'data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab', '=', 'data_target.id_kab')
             ->paginate(10);
 
         $jumlah = DB::table('data_target')
-            ->leftJoin('kecamatan', 'kecamatan.id_kec', '=', 'data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab', '=', 'data_target.id_kab')
             ->count();
 
@@ -92,14 +90,12 @@ class FilterController extends Controller
         $filter = DB::table('data_target')
             ->where('tanggal', '>=', $tanggal_awal)
             ->where('tanggal', '<=', $tanggal_akhir)
-            ->leftJoin('kecamatan', 'kecamatan.id_kec', '=', 'data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab', '=', 'data_target.id_kab')
             ->paginate(10);
 
         $jumlah = DB::table('data_target')
             ->where('tanggal', '>=', $tanggal_awal)
             ->where('tanggal', '<=', $tanggal_akhir)
-            ->leftJoin('kecamatan', 'kecamatan.id_kec', '=', 'data_target.id_kec')
             ->leftJoin('kabupaten', 'kabupaten.id_kab', '=', 'data_target.id_kab')
             ->count();
 

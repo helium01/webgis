@@ -11,17 +11,20 @@
                 <tr>
                     <th>Tanggal</th>
                     <th>Kabupaten</th>
-                    <th>Kecamatan</th>
                     <th>Belum Tervaksinasi</th>
                     <th>Zona</th>
+                    <th>Opsi</th>
                 </tr>
                 @foreach ($tanggal as $vaksin)
                 <tr>
                     <td> {{ $vaksin->tanggal }} </td>
                     <td> {{ $vaksin->nama }} </td>
-                    <td> {{ $vaksin->nama_kec }} </td>
                     <td> {{ $vaksin->bvaksin }} %</td>
                     <td> {{ $vaksin->zona }} </td>
+                    <td> 
+                    <a class="btn btn-primary" href="/hapus/data/{{$vaksin->id_target}}" role="button">Hapus data</a>
+
+                    </td>
                 </tr>
                 @endforeach
             </table></center><br><br>

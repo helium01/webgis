@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\DB;
 
 class DataKec extends Model
 {
-    public function allData(){
-        return DB::table('kecamatan')
-        ->leftJoin('kabupaten', 'kabupaten.id_kab','=','kecamatan.id_kab')
-        ->paginate(10);
+    public function allData()
+    {
+        return DB::table('kabupaten')
+            ->paginate(10);
     }
 }
