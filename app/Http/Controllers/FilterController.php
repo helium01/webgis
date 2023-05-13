@@ -79,7 +79,7 @@ class FilterController extends Controller
                 }
             }
 
-        return view('filter', ['filter' => $filter, 'jumlah' => $jumlah, 'zona' => $zona, "j"=> $j, "k" => $k, "kz" => $kz, "kz1" => $kz1, "kz2" => $kz2]);
+        return view('filter1', ['filter' => $filter, 'jumlah' => $jumlah, 'zona' => $zona, "j"=> $j, "k" => $k, "kz" => $kz, "kz1" => $kz1, "kz2" => $kz2]);
     }
 
     public function proses1(Request $request)
@@ -152,6 +152,6 @@ class FilterController extends Controller
                         $j++;
                     }
                 }
-        return view('filter', ['filter' => $filter, 'jumlah' => $jumlah, 'zona' => $zona, "j"=> $j, "k" => $k, "kz" => $kz, "kz1" => $kz1, "kz2" => $kz2]);
+        return view('filter1', ['filter' => $filter, 'jumlah' => $jumlah, 'zona' => $zona, "j"=> $j, "k" => $k, "kz" => $kz, "kz1" => $kz1, "kz2" => $kz2]);
     }
 }
